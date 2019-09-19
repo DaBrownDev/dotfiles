@@ -1,0 +1,2 @@
+untitled:Untitled-1
+GPIODirModeSet(GPIOA0_BASE, GPIO_DIR_MODE_OUT, Board_GPIO7 | Board_GPIO6 | Board_GPIO5 | Board_GPIO4 | Board_GPIO3 | Board_GPIO2 | Board_GPIO1 | Board_GPIO0)

@@ -1,0 +1,31 @@
+file:///share/linux/kernel/sys_s2_encrypt.c {"mtime":1568666327840,"size":994,"etag":"33r5klk09112","orphaned":false}
+#include <linux/syscalls.h>
+
+SYSCALL_DEFINE2(s2_encrypt, char*, str, unsigned char, key){
+    char c[255]; /* Allocates kernel space C string*/
+    long n = 255; /* Max size of the string */
+    long i; /* Index of Array */
+
+    /*
+    * Gets the size of the string and
+    * the string from the user space.
+    */
+
+    if(key > 1  && key < 5)
+        return -EINVAL;
+    printk(KERN_DEBUG "\nOutput From sys_s2_encrypt one.\n");
+    n = strncpy_from_user(c, str, n); /* Coppies c string from user*/
+
+    if(n == -EFAULT || n == sizeof(c)/sizeof(char))
+        return -EINVAL;
+    printk(KERN_DEBUG "\nOutput From sys_s2_encrypt two.\n");
+    for(i = 0; i < n; i++)
+        c[i] += key; /* Increments values */
+
+    if(copy_to_user(str, c, n) != 0) /*Copies c string from kernel to user */
+        return -EFAULT;
+    printk(KERN_DEBUG "\nOutput From sys_s2_encrypt three.\n");
+    printk(KERN_DEBUG "Output From sys_s2_encrypt %s .", c); /* Prints out the kernel string*/
+    return 0;
+
+}

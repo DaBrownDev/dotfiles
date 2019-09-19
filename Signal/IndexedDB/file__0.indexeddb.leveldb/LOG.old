@@ -1,0 +1,9 @@
+2019/09/11-16:39:28.182 25add Reusing MANIFEST /home/toocrazzzzy/.config/Signal/IndexedDB/file__0.indexeddb.leveldb/MANIFEST-000001
+2019/09/11-16:39:28.264 25add Current memtable full; waiting...
+2019/09/11-16:39:28.264 25b2d Level-0 table #5: started
+2019/09/11-16:39:28.268 25b2d Level-0 table #5: 337 bytes OK
+2019/09/11-16:39:28.278 25b2d Delete type=0 #3
+2019/09/11-16:39:28.278 25b2d Level-0 table #7: started
+2019/09/11-16:39:28.278 25b2d Level-0 table #7: 0 bytes OK
+2019/09/11-16:39:28.288 25b2d Delete type=0 #4
+2019/09/11-16:39:28.288 25b2d Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)

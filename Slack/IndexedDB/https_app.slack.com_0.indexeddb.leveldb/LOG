@@ -1,0 +1,15 @@
+2019/09/19-08:24:11.542 22188 Reusing MANIFEST /home/toocrazzzzy/.config/Slack/IndexedDB/https_app.slack.com_0.indexeddb.leveldb/MANIFEST-000001
+2019/09/19-08:24:11.542 22188 Recovering log #26
+2019/09/19-08:24:11.548 22188 Reusing old log /home/toocrazzzzy/.config/Slack/IndexedDB/https_app.slack.com_0.indexeddb.leveldb/000026.log 
+2019/09/19-08:24:14.034 22358 Level-0 table #30: started
+2019/09/19-08:24:14.048 22358 Level-0 table #30: 1316724 bytes OK
+2019/09/19-08:24:14.052 22358 Delete type=0 #26
+2019/09/19-08:24:14.053 22358 Compacting 4@0 + 1@1 files
+2019/09/19-08:24:14.076 22358 Generated table #31@0: 7 keys, 337435 bytes
+2019/09/19-08:24:14.076 22358 Compacted 4@0 + 1@1 files => 337435 bytes
+2019/09/19-08:24:14.082 22358 compacted to: files[ 0 1 1 0 0 0 0 ]
+2019/09/19-08:24:14.082 22358 Delete type=2 #27
+2019/09/19-08:24:14.082 22358 Delete type=2 #24
+2019/09/19-08:24:14.082 22358 Delete type=2 #19
+2019/09/19-08:24:14.083 22358 Delete type=2 #30
+2019/09/19-08:24:14.083 22358 Delete type=2 #21
